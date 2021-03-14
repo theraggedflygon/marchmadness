@@ -22,12 +22,6 @@ def get_kenpom_rankings():
     write_rankings(kenpom, 'kenpom')
 
 
-def write_rankings(ratings, source):
-    with open("rankings/{}.csv".format(source), 'w') as file:
-        for team in ratings:
-            file.write("{},{},\n".format(team, ratings[team]))
-
-
 def espn_get_rankings():
     bpi = {}
     for i in range(1, 8):
@@ -44,6 +38,34 @@ def espn_get_rankings():
 
     write_rankings(bpi, 'espn_bpi')
 
+
+def rpi_get_rankings():
+    rpi = {}
+    r = requests.get("https://www.cbssports.com/college-basketball/rankings/rpi/").text
+    rpi_soup = BeautifulSoup(r, 'lxml')
+
+    rpi_table = rpi_soup.find('table', {"class": "TableBase-table"}).find("tbody")
+
+    for team in rpi_table.find_all("tr"):
+        team_cols = team.find_all("td")
+        team = team_cols[1].text.split("\n")[1]
+        rating_str = team_cols[3].text.split("\n")[1].strip()
+        if rating_str == "—":
+            rating = 0
+        else:
+            rating = float(rating_str)
+        rpi[team] = rating
+
+    write_rankings(rpi, 'rpi')
+
+
+def write_rankings(ratings, source):
+    with open("rankings/{}.csv".format(source), 'w') as file:
+        for team in ratings:
+            file.write("{},{},\n".format(team, ratings[team]))
+
+
 if __name__ == "__main__":
     # get_kenpom_rankings()
-    espn_get_rankings()
+    # espn_get_rankings()
+    rpi_get_rankings()

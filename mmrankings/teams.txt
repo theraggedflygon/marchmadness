@@ -1,0 +1,68 @@
+Gonzaga,ZAGS
+Illinois,UIUC
+Baylor,BAY
+Iowa,IOWA
+Houston,UH
+Michigan,MICH
+Ohio State,TOSU
+Alabama,BAMA
+Virginia,UVA
+Kansas,KU
+Texas,UT
+Florida State,FSU
+West Virginia,WVU
+Wisconsin,WISC
+Purdue,PURD
+Creighton,CRT
+Texas Tech,TTU
+Arkansas,ARK
+Colorado,COLO
+Tennessee,TENN
+Southern California,USC
+San Diego State,SDSU
+Connecticut,UCONN
+North Carolina,UNC
+Louisiana State,LSU
+Oklahoma State,OKST
+Villanova,NOVA
+Brigham Young,BYU
+Loyola (IL),L-CH
+Maryland,UMD
+Oregon,UOR
+Rutgers,RUT
+Georgia Tech,GT
+Florida,UFL
+Syracuse,CUSE
+Michigan State,MSU
+St. Bonaventure,BONA
+Oklahoma,OK
+Utah State,USU
+Clemson,CLEM
+UCLA,UCLA
+Virginia Commonwealth,VCU
+Georgetown,GTOWN
+Virginia Tech,VTECH
+Missouri,MIZZ
+Wichita State,WIST
+Colgate,GATE
+Oregon State,ORST
+Winthrop,WIN
+North Texas,NTEX
+North Carolina-Greensboro,UNCG
+UC-Santa Barbara,UCSB
+Drake,DRK
+Abilene Christian,ABCH
+Liberty,LIB
+Ohio,OHIO
+Eastern Washington,EWU
+Grand Canyon,GCU
+Morehead State,MRST
+Oral Roberts,ORU
+Drexel,DREX
+Iona,IONA
+Cleveland State,CLST
+Hartford,HTFD
+Appalachian State,APPST
+Mount St. Mary's,MOUNT
+Texas Southern,TXSO
+Norfolk State,NFST

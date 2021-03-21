@@ -17,4 +17,3 @@ for system in rankings:
     with open('mmrankings/{}.csv'.format(system), 'w') as file:
         for team in new_dict:
             file.write("{},{},\n".format(team, new_dict[team]))
-

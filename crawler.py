@@ -82,7 +82,7 @@ def write_rankings(ratings, source):
 
 
 if __name__ == "__main__":
-    # get_kenpom_rankings()
-    # espn_get_rankings()
-    # rpi_get_rankings()
+    get_kenpom_rankings()
+    espn_get_rankings()
+    rpi_get_rankings()
     elo_538_get_rankings()

@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import string
 
 
 def get_kenpom_rankings():
@@ -16,7 +17,7 @@ def get_kenpom_rankings():
             for col in team.find_all("td"):
                 team_list.append(col.text)
             try:
-                kenpom[team_list[1]] = float(team_list[4])
+                kenpom[team_list[1].rstrip(string.digits).strip()] = float(team_list[4])
             except IndexError:
                 continue
 
@@ -49,7 +50,7 @@ def rpi_get_rankings():
 
     for team in rpi_table.find_all("tr"):
         team_cols = team.find_all("td")
-        team = team_cols[1].text.split("\n")[1]
+        team = team_cols[1].text.split("\n")[0]
         rating_str = team_cols[3].text.split("\n")[1].strip()
         if rating_str == "—":
             rating = 0
@@ -76,6 +77,7 @@ def elo_538_get_rankings():
 
 
 def write_rankings(ratings, source):
+    print(source)
     with open("rankings/{}.csv".format(source), 'w') as file:
         for team in ratings:
             file.write("{},{},\n".format(team, ratings[team]))
@@ -83,6 +85,6 @@ def write_rankings(ratings, source):
 
 if __name__ == "__main__":
     get_kenpom_rankings()
-    espn_get_rankings()
-    rpi_get_rankings()
-    elo_538_get_rankings()
+    # espn_get_rankings()
+    # rpi_get_rankings()
+    # elo_538_get_rankings()

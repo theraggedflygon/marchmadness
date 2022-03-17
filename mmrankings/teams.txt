@@ -1,0 +1,68 @@
+Gonzaga,ZAGS
+Kansas,KU
+Kentucky,UK
+Arizona,ARI
+Auburn,AUB
+Villanova,NOVA
+Iowa,IOWA
+Houston,UH
+Purdue,PUR
+Tennessee,TENN
+UCLA,UCLA
+Duke,DUKE
+Texas Tech,TTU
+Baylor,BAY
+Illinois,UIUC
+Louisiana State,LSU
+Arkansas,ARK
+Wisconsin,WISC
+Texas,TEX
+Connecticut,UCONN
+Alabama,BAMA
+Michigan,UM
+Virginia Tech,VT
+North Carolina,UNC
+Ohio State,OSU
+Memphis,MEM
+Saint Mary's (CA),SM
+Loyola (IL),LC
+Indiana,IU
+Providence,PRO
+San Diego State,SDSU
+Michigan State,MSU
+Texas Christian,TCU
+Southern California,USC
+Marquette,MRQ
+Seton Hall,SH
+Boise State,BSU
+Creighton,CRG
+Murray State,MRY
+Davidson,DAV
+Notre Dame,ND
+Alabama-Birmingham,UAB
+Miami (FL),MFL
+Iowa State,ISU
+Colorado State,CSU
+San Francisco,SF
+Richmond,RIC
+South Dakota State,SDKS
+Vermont,UVM
+Chattanooga,CHAT
+New Mexico State,NMSU
+Colgate,GATE
+Akron,AKR
+Yale,YALE
+Saint Peter's,SP
+Jacksonville State,JKST
+Montana State,MONS
+Wright State,WSU
+Longwood,LNG
+Delaware,UD
+Georgia State,GSU
+Texas Southern,TSO
+Norfolk State,NSU
+Cal State Fullerton,CSF
+Rutgers,RUT
+Wyoming,WY
+Texas A&M-Corpus Christi,TCC
+Bryant,BRY
